@@ -52,7 +52,7 @@ B = 3.5
 C = 2
 H = 12
 l1 = 5
-l2 = 9.4
+l2 = 9.5
 
 alpha = np.arccos((np.square((l1-x1))+np.square(A-B)-np.square(x1))/(2*(A-B)*(l1-x1)))
 px = A-(l1-x1)*np.cos(alpha)
