@@ -69,7 +69,11 @@ print(np.cos(beta))
 qx = px - (l2-x2)*np.cos(beta)
 qy = py + (l2-x2)*np.sin(beta)
 
+l_total = np.sqrt((qx)**2+(H-qy)**2)+H+l1+l2
+print(l_total)
+
 plt.plot([A,px,B],[0,py,0])
 plt.plot([px,qx,C],[py,qy,0])
 plt.plot([qx,0],[qy,H])
+plt.axis('equal')
 plt.show()
